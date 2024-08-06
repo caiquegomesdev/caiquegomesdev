@@ -4,7 +4,7 @@ Olá! Meu nome é Caíque Gomes👋
 - ⚡ Freelancer
 <br>
     
-<div style="display: inline_block"><br>
+<div style="display: inline_block" align="center"><br>
   <img align="center" alt="Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
   <img align="center" alt="Ts" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg">
   <img align="center" alt="React" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg">
@@ -19,7 +19,7 @@ Olá! Meu nome é Caíque Gomes👋
 
 <br>
 
-<div>
+<div align="center">
 <a href="https://github.com/caiquegomesdev">
 <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=caiquegomesdev&layout=compact&langs_count=7&theme=dracula"/>
 <img src="https://github-readme-stats.vercel.app/api?username=caiquegomesdev&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=pt-br&hide_border=true" height="180em" alt="stats graph"  />
