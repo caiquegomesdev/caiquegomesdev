@@ -1,9 +1,8 @@
+Olá! Meu nome é Caíque Gomes👋
 
-<h1 align="center">
-<img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&center=true&vCenter=true&width=500&height=70&duration=4000&lines=Oi+Pessoal!+👋;+Eu+sou+o+Gomes+👨‍💻!;" />
-</h1>
-
-
+- ⚡Developer🔭
+- ⚡ Análise e desenvolvimento de Sistemas
+- ⚡ Freelancer
 
 <br>
 
@@ -23,17 +22,10 @@
 
 ##
 
-<div align="center">
-
-  <h2 align="center">⚡ Estatisticas ⚡</h2>
-
-  <div align="center">  
-  <img width="49%" height="195px" src="https://github-readme-stats.vercel.app/api?username=caiquegomesdev&show_icons=true&count_private=true&hide_border=true&title_color=00ccff&icon_color=1c4966&text_color=c9d1d9&bg_color=0d1117" alt="Caiquegomesdev github stats" /> 
-  <img width="41%" height="195px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=caiquegomesdev&layout=compact&hide_border=true&title_color=00ccff&text_color=225566&bg_color=0d1117" />
-</div>
-
-  [![Ashutosh's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=caiquegomesdev&bg_color=0d1117&color=225566&line=1c4966&point=00ccff&area=true&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
-  
+<div>
+<a href="https://github.com/caiquegomesdev">
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=caiquegomesdev&layout=compact&langs_count=7&theme=dracula"/>
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=caiquegomesdev&show_icons=true&theme=dracula&include_all_commits=true&count_private=true"/>
 </div>
 
 <div> 
