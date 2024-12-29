@@ -1,9 +1,9 @@
 
 
 <div align: center;">
-  <img src="hlw.gif" alt="Ola! Mundo." height="200px">
-  <img src="https://media.giphy.com/media/Yk211oEXnbpH00Tgv3/giphy.gif" alt="Spider-Verse GIF" height="200px">
-   <img src="hlw.gif" alt="Ola! Mundo." height="200px">
+  <img src="hlw.gif" alt="Ola! Mundo." height="180px">
+  <img src="https://media.giphy.com/media/Yk211oEXnbpH00Tgv3/giphy.gif" alt="Spider-Verse GIF" height="180px">
+   <img src="hlw.gif" alt="Ola! Mundo." height="180px">
 </div>
 
 <div align="center">
