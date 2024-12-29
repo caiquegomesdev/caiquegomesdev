@@ -1,5 +1,13 @@
+
+
+ <div align="center">
+  <img src="hlw.gif" alt="Ola! Mundo." width="50%">
+</div>
+
 <div align="center">
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=FFFFFF&width=435&lines=%F0%9F%AB%A1+Hey%2C+what%E2%80%99s+up%3F++I'm+Ca%C3%ADque+Gomes.;%F0%9F%A7%91%F0%9F%8F%BE%E2%80%8D%F0%9F%92%BB+I'm+Software+Developer.;%F0%9F%8C%8E+I+live+in+Salvador-BA+Brazil.;%E2%99%A8%EF%B8%8F+Let's+code!;%F0%9F%A6%85+AVANTE." alt="Typing SVG" /></a>
+  
+ 
 </div>
 
 ##
