@@ -78,7 +78,7 @@
 </div>
 
 <div align="center">
-  <a href="https://caiquegomesdev.github.io/CaiqueGomesDevPortifolio/" target="_blank">
+  <a href="https://caiquegomesdev.github.io/CaiqueGomesDevPortifolio-/" target="_blank">
     <img src="https://img.shields.io/badge/-Visite%20meu%20Portf%C3%B3lio-%23FF5733?style=for-the-badge&logo=github&logoColor=white" alt="Visite meu Portfólio"/>
   </a>
 </div>
