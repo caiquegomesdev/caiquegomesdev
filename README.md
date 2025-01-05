@@ -76,7 +76,15 @@
   <a href="https://www.linkedin.com/in/ca%C3%ADque-gomes-0a1706176/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
  
 </div>
+
 <div align="center">
+  <a href="https://caiquegomesdev.github.io/CaiqueGomesDevPortifolio/" target="_blank">
+    <img src="https://img.shields.io/badge/-Visite%20meu%20Portf%C3%B3lio-%23FF5733?style=for-the-badge&logo=github&logoColor=white" alt="Visite meu Portfólio"/>
+  </a>
+</div>
+
+
+
 <br clear="both">
 
 <hr>
