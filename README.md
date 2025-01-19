@@ -6,9 +6,9 @@
 
 
 <div align="center" style="display: flex; justify-content: center; align-items: center; gap: 10px; flex-wrap: wrap;">
-  <img src="hlw.gif" alt="Ola! Mundo." height="150px" class="image-left">
-  <img src="https://media.giphy.com/media/Yk211oEXnbpH00Tgv3/giphy.gif" alt="Spider-Verse GIF" height="150px" class="image-middle">
-  <img src="hlw.gif" alt="Ola! Mundo." height="150px" class="image-right">
+
+  <img src="https://media.giphy.com/media/Yk211oEXnbpH00Tgv3/giphy.gif" alt="Spider-Verse GIF" height="350px" class="image-middle">
+  
 </div>
 
 
