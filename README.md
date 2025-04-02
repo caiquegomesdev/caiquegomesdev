@@ -7,7 +7,9 @@
 
 <div align="center" style="display: flex; justify-content: center; align-items: center; gap: 10px; flex-wrap: wrap;">
 
-<img src="gifs/typing.gif" alt="typing" height="350px" class="image-middle">
+<img src="c.gif" alt="typing" height="300px" class="image-middle">
+<img src="s.gif" alt="typing" height="300px" class="image-middle">
+<img src="g.gif" alt="typing" height="300px" class="image-middle">
   
 </div>
 
