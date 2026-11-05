@@ -1,0 +1,99 @@
+name: Atualizar cards do perfil
+
+# Gera os cards de stats, linguagens, pins e a snake DENTRO do repositório,
+# sem depender da instância pública da Vercel (que vive dando rate limit).
+on:
+  schedule:
+    - cron: "0 */12 * * *" # a cada 12 horas
+  workflow_dispatch: # botão "Run workflow" na aba Actions
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/profile-cards.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-cards
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      # Opcional: crie o secret STATS_TOKEN (PAT com read:user + repo) para contar repos privados.
+      # Sem ele, usa o GITHUB_TOKEN padrão (só dados públicos).
+      CARD_TOKEN: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
+      THEME: bg_color=0d1117&title_color=22d3ee&icon_color=8b5cf6&text_color=c9d1d9&border_color=30363d&hide_border=false&border_radius=12&locale=pt-br
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Preparar pasta
+        run: mkdir -p profile
+
+      - name: Card de estatísticas
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&include_all_commits=true&count_private=true&rank_icon=github&${{ env.THEME }}
+          path: profile/stats.svg
+          token: ${{ env.CARD_TOKEN }}
+
+      - name: Card de linguagens
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&layout=compact&langs_count=8&${{ env.THEME }}
+          path: profile/top-langs.svg
+          token: ${{ env.CARD_TOKEN }}
+
+      - name: Pin — SalesWebMvc
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=SalesWebMvc&show_owner=false&${{ env.THEME }}
+          path: profile/pin-SalesWebMvc.svg
+          token: ${{ env.CARD_TOKEN }}
+
+      - name: Pin — Vyear
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=Vyear&show_owner=false&${{ env.THEME }}
+          path: profile/pin-Vyear.svg
+          token: ${{ env.CARD_TOKEN }}
+
+      - name: Pin — Financing-Simulator
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=Financing-Simulator&show_owner=false&${{ env.THEME }}
+          path: profile/pin-Financing-Simulator.svg
+          token: ${{ env.CARD_TOKEN }}
+
+      - name: Pin — Portfólio
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=CaiqueGomesDevPortifolio-&show_owner=false&${{ env.THEME }}
+          path: profile/pin-Portfolio.svg
+          token: ${{ env.CARD_TOKEN }}
+
+      - name: Snake das contribuições
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            profile/snake.svg?color_snake=#8b5cf6&color_dots=#ebedf0,#c4b5fd,#a78bfa,#8b5cf6,#6d28d9
+            profile/snake-dark.svg?palette=github-dark&color_snake=#22d3ee&color_dots=#161b22,#1e3a5f,#2563eb,#7c3aed,#22d3ee
+
+      - name: Commit dos cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile/*.svg
+          git commit -m "chore: atualiza cards do perfil" || exit 0
+          git pull --rebase origin main
+          git push
